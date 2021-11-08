@@ -1,0 +1,95 @@
+@media (max-width: 768px)  {
+  a {
+    font-size: 9px;
+    padding: 3px 10px;
+  }
+
+  .generic-link:hover {
+    font-size: 8px;
+  }
+
+  #sign-in {
+    padding: 0 10px;
+    padding-right: 1px;
+  }
+
+  #login-status {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .generic-link:hover {
+    font-size: 13px;
+  }
+
+  #sign-in {
+    padding: 0 40px;
+    padding-right: 10px;
+  }
+
+  a {
+    font-size: 14px;
+  }
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  background-color: #F42272;
+}
+
+li {
+  float: right;
+  font-family: Poppins;
+  font-weight: 700;
+}
+
+a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
+}
+
+.generic-link {
+  transition: color .3s;
+  transition-timing-function: ease;
+}
+
+.generic-link:hover {
+  color: #232E21;
+}
+
+#sign-in {
+  background-color: #232E21;
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
+
+  transition: background-color .3s;
+  transition-timing-function: ease;
+}
+
+#sign-in:hover{
+  background-color: white;
+}
+
+#sign-in a:hover {
+  color: #232E21;
+}
+
+#login-status {
+  float: left;
+  color: white;
+  text-align: center;
+  position: sticky;
+}
