@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  loginStatus = 'NOT SIGNED IN';
+  loginStatus: string = 'NOT SIGNED IN';
+
   constructor() { }
 
   ngOnInit(): void {
