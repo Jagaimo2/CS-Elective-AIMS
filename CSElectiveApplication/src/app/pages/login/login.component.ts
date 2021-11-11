@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-login',
@@ -10,7 +11,7 @@ export class LoginComponent implements OnInit {
   username: string = "";
   password: string = "";
 
-  constructor() { }
+  constructor(private route: Router) { }
 
   ngOnInit(): void {
   }
@@ -18,7 +19,11 @@ export class LoginComponent implements OnInit {
   checkValues(){
     if(this.username == "Student"){
       if(this.password == "Test"){
+
         this.message = "LOGIN SUCCESS!";
+        setTimeout(()=> {
+          this.route.navigateByUrl('/');
+        }, 2000);
       }
       else{
         this.message = "INCORRECT PASSWORD!"

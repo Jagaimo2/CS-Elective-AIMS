@@ -11,11 +11,15 @@ import { ContentHeaderComponent } from './content-header/content-header.componen
 import { FooterComponent } from './footer/footer.component';
 import { GalleryComponent } from './pages/gallery/gallery.component';
 import { RouterModule, Routes} from "@angular/router";
+import { ForumsComponent } from './pages/forums/forums.component';
+import { JobsComponent } from './pages/jobs/jobs.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent},
-  { path: 'gallery', component: GalleryComponent },
-  { path: 'login', component: LoginComponent}
+  { path: 'gallery', component: GalleryComponent},
+  { path: 'login', component: LoginComponent},
+  { path: 'forums', component: ForumsComponent},
+  { path: 'jobs', component: JobsComponent}
 ];
 
 @NgModule({
@@ -26,7 +30,9 @@ const appRoutes: Routes = [
     HomeComponent,
     ContentHeaderComponent,
     FooterComponent,
-    GalleryComponent
+    GalleryComponent,
+    ForumsComponent,
+    JobsComponent
   ],
   imports: [
     BrowserModule,
