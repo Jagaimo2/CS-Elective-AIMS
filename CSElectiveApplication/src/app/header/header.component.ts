@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  loginMessage = 'SIGN IN';
   loginStatus: string = 'NOT SIGNED IN';
 
   constructor() { }
@@ -14,4 +15,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  pageChanged(page: string){
+    console.log(`I've changed pages! The current page is ${page}`);
+  }
 }

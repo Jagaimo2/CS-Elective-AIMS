@@ -1,0 +1,81 @@
+.forums-container {
+  animation: pageAccessed .5s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease;
+}
+
+.forums-description, .forums {
+  margin: 3% 5%;
+}
+
+.forums-description p {
+  font-family: Poppins;
+  color: #707070;
+}
+
+.forum {
+  width: 45%;
+  border: 2px solid #707070;
+  font-family: Poppins;
+}
+
+.forum p {
+  color: #707070;
+}
+
+.forum h2 {
+  color: #F42272;
+}
+
+.forum-image-container {
+  background: url("src\assets\images\MITOCHONDRIA.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  width: 100.2%;
+}
+
+.forum-feature-image {
+  background: #232E21;
+  width: 100.2%;
+
+
+  height: 150px;
+  position: relative;
+  top: -1px;
+  clip-path: polygon(80% 0, 100% 0, 100% 80%, 80% 0);
+}
+
+.forum-content-container {
+  border-top: 2px solid #707070;
+
+  position: relative;
+  width: 100%;
+  height: 80%;
+}
+
+.forum-content {
+  padding: 5%;
+}
+
+.forum-content button {
+  font-family: Poppins;
+  font-weight: 700;
+
+  color: white;
+  background-color: #F42272;
+  width: 40%;
+
+  border: 1px solid #F42272;
+  border-radius: 15px;
+}
+
+@keyframes pageAccessed {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}

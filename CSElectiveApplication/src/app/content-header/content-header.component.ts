@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-content-header',
@@ -6,11 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./content-header.component.css']
 })
 export class ContentHeaderComponent implements OnInit {
-  currentPage: string = 'HOMEPAGE';
+  @Input() currentPage: string = '';
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
