@@ -1,6 +1,5 @@
 import {Component, Input, OnInit } from '@angular/core';
 import {HeaderService} from "./header.service";
->>>>>>> Stashed changes
 
 @Component({
   selector: 'app-header',
