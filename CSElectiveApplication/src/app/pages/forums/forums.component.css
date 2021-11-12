@@ -1,3 +1,18 @@
+<<<<<<< Updated upstream
+=======
+@media (max-width: 768px) {
+  .forum {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .forum {
+    width: 45%;
+  }
+}
+
+>>>>>>> Stashed changes
 .forums-container {
   animation: pageAccessed .5s;
   animation-fill-mode: backwards;
@@ -14,7 +29,10 @@
 }
 
 .forum {
+<<<<<<< Updated upstream
   width: 45%;
+=======
+>>>>>>> Stashed changes
   border: 2px solid #707070;
   font-family: Poppins;
 }
@@ -36,6 +54,7 @@
 }
 
 .forum-feature-image {
+<<<<<<< Updated upstream
   background: #232E21;
   width: 100.2%;
 
@@ -44,6 +63,12 @@
   position: relative;
   top: -1px;
   clip-path: polygon(80% 0, 100% 0, 100% 80%, 80% 0);
+=======
+  width: 100.2%;
+  height: 150px;
+  position: relative;
+  top: -1px;
+>>>>>>> Stashed changes
 }
 
 .forum-content-container {
