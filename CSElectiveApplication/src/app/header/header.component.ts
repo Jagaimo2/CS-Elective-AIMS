@@ -1,6 +1,3 @@
-<<<<<<< Updated upstream
-import {Component, OnInit, Output} from '@angular/core';
-=======
 import {Component, Input, OnInit } from '@angular/core';
 import {HeaderService} from "./header.service";
 >>>>>>> Stashed changes
@@ -12,13 +9,8 @@ import {HeaderService} from "./header.service";
 })
 export class HeaderComponent implements OnInit {
 
-<<<<<<< Updated upstream
-  loginMessage = 'SIGN IN';
-  loginStatus: string = 'NOT SIGNED IN';
-=======
   @Input() loginStatus = '';
   @Input() loginMessage = '';
->>>>>>> Stashed changes
 
   constructor(private status: HeaderService) { }
 
