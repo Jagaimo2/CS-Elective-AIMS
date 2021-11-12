@@ -1,4 +1,5 @@
-import {Component, OnInit, Output} from '@angular/core';
+import {Component, Input, OnInit } from '@angular/core';
+import {HeaderService} from "./header.service";
 
 @Component({
   selector: 'app-header',
@@ -7,12 +8,14 @@ import {Component, OnInit, Output} from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  loginMessage = 'SIGN IN';
-  loginStatus: string = 'NOT SIGNED IN';
+  @Input() loginStatus = '';
+  @Input() loginMessage = '';
 
-  constructor() { }
+  constructor(private status: HeaderService) { }
 
   ngOnInit(): void {
+    this.loginMessage = this.status.signInMessage;
+    this.loginStatus = this.status.signInStatus;
   }
 
   pageChanged(page: string){
