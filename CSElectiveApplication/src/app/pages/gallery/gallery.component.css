@@ -1,3 +1,11 @@
+@media (max-width: 768px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
 .gallery-container {
   animation: pageAccessed .5s;
   animation-fill-mode: backwards;
