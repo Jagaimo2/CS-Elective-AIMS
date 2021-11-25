@@ -4,8 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { LoginComponent } from './pages/login/login.component';
 import {FormsModule} from "@angular/forms";
+import { LoginComponent} from "./login/login.component";
 import { HomeComponent } from './pages/home/home.component';
 import { ContentHeaderComponent } from './content-header/content-header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -13,6 +13,7 @@ import { GalleryComponent } from './pages/gallery/gallery.component';
 import { RouterModule, Routes} from "@angular/router";
 import { ForumsComponent } from './pages/forums/forums.component';
 import { JobsComponent } from './pages/jobs/jobs.component';
+import { HttpClientModule } from "@angular/common/http";
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent},
@@ -38,7 +39,8 @@ const appRoutes: Routes = [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {LoginService} from "./login.service";
+import {NgForm} from "@angular/forms";
 
 @Component({
   selector: 'app-login',
@@ -7,27 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
   message: string = "LOGIN";
-  username: string = "";
-  password: string = "";
 
-  constructor() { }
+  constructor(public loginService: LoginService) { }
 
   ngOnInit(): void {
-  }
-
-  checkValues(){
-    if(this.username == "Student"){
-      if(this.password == "Test"){
-        this.message = "LOGIN SUCCESS!";
-      }
-      else{
-        this.message = "INCORRECT PASSWORD!"
-        setTimeout(()=> this.message = "LOGIN", 2000);
-      }
-    }
-    else{
-      this.message = "INVALID USER!"
-      setTimeout(()=> this.message = "LOGIN", 2000);
-    }
   }
 }

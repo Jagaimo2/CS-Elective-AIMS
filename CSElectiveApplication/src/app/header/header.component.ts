@@ -1,5 +1,6 @@
-import {Component, Input, OnInit } from '@angular/core';
-import {HeaderService} from "./header.service";
+import {Component, OnInit } from '@angular/core';
+import {LoginService} from "../login/login.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-header',
@@ -8,17 +9,16 @@ import {HeaderService} from "./header.service";
 })
 export class HeaderComponent implements OnInit {
 
-  @Input() loginStatus = '';
-  @Input() loginMessage = '';
+  constructor(public loginService: LoginService, private reroute: Router) { }
 
-  constructor(private status: HeaderService) { }
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
-    this.loginMessage = this.status.signInMessage;
-    this.loginStatus = this.status.signInStatus;
-  }
-
-  pageChanged(page: string){
-    console.log(`I've changed pages! The current page is ${page}`);
+  loginInteract(status: string){
+    if(status == 'SIGNED IN'){
+      this.loginService.signOut()
+    }
+    else{
+      this.reroute.navigate(['/login'])
+    }
   }
 }
