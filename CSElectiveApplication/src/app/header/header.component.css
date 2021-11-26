@@ -75,12 +75,13 @@ a {
   background-color: #232E21;
   clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
 
-  transition: background-color .3s;
+  transition: background-color .3s, color .3s;
   transition-timing-function: ease;
 }
 
 #sign-in:hover{
   background-color: white;
+  color: #232E21;
 }
 
 #sign-in a:hover {

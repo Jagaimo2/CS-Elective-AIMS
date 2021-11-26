@@ -14,12 +14,14 @@ import { RouterModule, Routes} from "@angular/router";
 import { ForumsComponent } from './pages/forums/forums.component';
 import { JobsComponent } from './pages/jobs/jobs.component';
 import { HttpClientModule } from "@angular/common/http";
+import { ForumComponent } from './pages/forums/forum/forum.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent},
   { path: 'gallery', component: GalleryComponent},
   { path: 'login', component: LoginComponent},
   { path: 'forums', component: ForumsComponent},
+  { path: 'forums/:id', component: ForumComponent},
   { path: 'jobs', component: JobsComponent}
 ];
 
@@ -33,7 +35,8 @@ const appRoutes: Routes = [
     FooterComponent,
     GalleryComponent,
     ForumsComponent,
-    JobsComponent
+    JobsComponent,
+    ForumComponent
   ],
   imports: [
     BrowserModule,

@@ -9,20 +9,20 @@
   </div>
 
   <div class="forums">
-    <!-- BELOW IS A SAMPLE OF A FORUM -->
-    <div class="forum">
-      <div class="forum-image-container">
-        <div class="forum-feature-image"></div>
-      </div>
-
-      <div class="forum-content-container">
-        <div class="forum-content">
-          <h2>THE MITOCHONDRIA</h2>
-          <p>It is the powerhouse of the cell. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-
-          <button>JOIN DISCUSSION</button>
+    <div class="forum" *ngFor="let forum of forumService.forums">
+        <div class="forum-image-container">
+          <div class="forum-feature-image"></div>
         </div>
-      </div>
+
+        <div class="forum-content-container">
+          <div class="forum-content">
+            <h2>{{ forum.title.toUpperCase() }}</h2>
+            <h5>POSTED BY: {{ forum.poster }}</h5>
+            <p>{{ forum.content }}</p>
+
+            <button routerLink="/forums/{{ forum.id }}">JOIN DISCUSSION</button>
+          </div>
+        </div>
     </div>
 
   </div>

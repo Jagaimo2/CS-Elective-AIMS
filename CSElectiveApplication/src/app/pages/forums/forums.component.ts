@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ForumService} from "./forum.service";
 
 @Component({
   selector: 'app-forums',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ForumsComponent implements OnInit {
 
-  constructor() { }
+  constructor(public forumService: ForumService) { }
 
   ngOnInit(): void {
+    this.forumService.getForums();
   }
 
 }

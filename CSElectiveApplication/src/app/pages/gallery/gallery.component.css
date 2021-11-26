@@ -1,9 +1,31 @@
 @media (max-width: 768px) {
+  .albums-container {
+    display: block;
+    margin: 0 5%;
+  }
 
+  .album {
+    height: 300px;
+    width: 100%;
+    border: 2px solid #707070;
+    margin: 3% 1%;
+  }
 }
 
 @media (min-width: 768px) {
+  .albums-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 5%;
+  }
 
+  .album {
+    height: 200px;
+    min-width: 30%;
+    max-width: 30%;
+    border: 2px solid #707070;
+    margin: 3% 1%;
+  }
 }
 
 .gallery-container {
@@ -23,21 +45,6 @@
 
 .gallery-albums h1 {
   text-align: center;
-}
-
-.albums-container {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 5%;
-}
-
-.album {
-  flex: 3 0 20%;
-  height: 200px;
-  width: 15%;
-  border: 2px solid #707070;
-  float: left;
-  margin: 3% 1%;
 }
 
 @keyframes pageAccessed {

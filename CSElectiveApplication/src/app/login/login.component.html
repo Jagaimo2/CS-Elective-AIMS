@@ -6,22 +6,22 @@
     <h1>{{ loginService.loginStatus }}</h1>
     <form (ngSubmit)="loginService.loginAttempt(loginForm)" #loginForm="ngForm">
 
-      <label>Username: </label>
+      <label>USERNAME: </label>
       <div class="input-container">
-        <input type="text" name="username" required ngModel>
+        <input type="text" name="username" required ngModel email>
       </div>
 
-      <label>Password: </label>
+      <label>PASSWORD: </label>
       <div class="input-container">
         <input type="password" name="password" required ngModel>
       </div>
 
       <div>
-        <input type="submit" value="LOG IN">
+        <input type="submit" id="submitButton" value="LOG IN">
       </div>
     </form>
 
-    <p id="info">Alumni Information Management System</p>
-    <a routerLink="/">RETURN TO HOMEPAGE</a>
+    <p id="info">ALUMNI INFORMATION MANAGEMENT SYSTEM</p>
+    <a routerLink="/" id="returnHome">RETURN TO HOMEPAGE</a>
   </div>
 </div>
