@@ -1,0 +1,50 @@
+@media (max-width: 768px){
+
+}
+
+@media (min-width: 768px){
+
+}
+
+.forum-container {
+  margin: 5% 5%;
+}
+
+.forum-header {
+
+}
+
+.forum-header-image {
+  height: 300px;
+  width: 100%;
+  border: 1px solid #232E21;
+}
+
+.forum-header h1 {
+  margin-top: 3%;
+  font-family: Poppins;
+}
+
+.forum-content-container {
+
+}
+
+.forum-content-container p {
+  font-family: Bahnschrift;
+  color: #707070;
+  line-height: 30px;
+}
+
+.forum-comments-container {
+  margin-top: 3%;
+}
+
+.forum-comments-container h2 {
+  font-family: Poppins;
+}
+
+#comment {
+  height: 100px;
+  width: 100%;
+  overflow-y: scroll;
+}

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {ForumService} from "../forum.service";
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-forum',
@@ -7,9 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ForumComponent implements OnInit {
 
-  constructor() { }
+  constructor(public forumService: ForumService, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.forumService.getForum(this.activatedRoute.snapshot.params['id']);
   }
 
 }

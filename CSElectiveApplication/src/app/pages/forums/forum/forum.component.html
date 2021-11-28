@@ -1,1 +1,25 @@
-<p>forum works!</p>
+<div class="forum-container">
+  <div class="forum-header">
+    <div class="forum-header-image"></div>
+
+    <h1>{{ forumService.forum.title.toUpperCase() }}</h1>
+  </div>
+
+  <div class="forum-content-container">
+    <p>{{ forumService.forum.content }}</p>
+  </div>
+
+  <div class="forum-comments-container">
+    <h2>COMMENTS</h2>
+    <form>
+      <textarea name="" id="comment" placeholder="Write and post your comment here..."></textarea>
+    </form>
+
+    <div class="comments-section">
+
+    </div>
+  </div>
+</div>
+
+<app-header></app-header>
+<app-footer></app-footer>

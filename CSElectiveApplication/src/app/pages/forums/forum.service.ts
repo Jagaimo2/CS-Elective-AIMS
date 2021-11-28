@@ -7,6 +7,7 @@ import {ForumModel} from "./forum.model";
 })
 export class ForumService {
 
+  forum: any;
   forums: ForumModel[] = [];
   constructor(private http: HttpClient) { }
 
@@ -25,5 +26,10 @@ export class ForumService {
         this.forums.push(newForum);
       }
     })
+  }
+
+  getForum(id: string){
+    this.forum = this.forums.find(forum => forum.id == id);
+    console.log(this.forum.title);
   }
 }
