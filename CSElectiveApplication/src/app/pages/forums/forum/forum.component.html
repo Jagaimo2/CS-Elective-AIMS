@@ -3,6 +3,9 @@
     <div class="forum-header-image"></div>
 
     <h1>{{ forumService.forum.title.toUpperCase() }}</h1>
+    <h4>
+      POSTED BY: {{ forumService.forum.poster }} <span id="poster">{{ forumService.forum.datePosted.substring(0, 9) }}</span>
+    </h4>
   </div>
 
   <div class="forum-content-container">
@@ -11,13 +14,20 @@
 
   <div class="forum-comments-container">
     <h2>COMMENTS</h2>
-    <form>
-      <textarea name="" id="comment" placeholder="Write and post your comment here..."></textarea>
+    <form (ngSubmit)="forumService.submitComment(commentForm)" #commentForm="ngForm">
+      <textarea name="content" id="comment" placeholder="Write and post your comment here..."></textarea>
+      <input type="submit" id="submit-button" value="COMMENT">
     </form>
 
     <div class="comments-section">
-
+      <hr>
+      <div *ngFor="let comment of forumService.comments" class="comment">
+        <h5>{{ comment.poster }}</h5>
+        <h6>{{ comment.commentPostDate }}</h6>
+        <p>{{ comment.content }}</p>
+      </div>
     </div>
+
   </div>
 </div>
 

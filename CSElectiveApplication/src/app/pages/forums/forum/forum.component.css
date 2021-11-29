@@ -23,6 +23,7 @@
 .forum-header h1 {
   margin-top: 3%;
   font-family: Poppins;
+  color: #707070;
 }
 
 .forum-content-container {
@@ -39,12 +40,50 @@
   margin-top: 3%;
 }
 
-.forum-comments-container h2 {
+.forum-comments-container h2, h4{
   font-family: Poppins;
+  color: #707070;
+}
+
+#poster {
+  margin-left: 3%;
 }
 
 #comment {
-  height: 100px;
+  height: 150px;
   width: 100%;
   overflow-y: scroll;
+  resize: vertical;
+}
+
+#submit-button {
+  height: 50px;
+  width: 10%;
+
+  font-family: Poppins;
+  color: white;
+  background-color: #232E21;
+  border: 1px solid #232E21;
+
+  float: right;
+  margin-top: 1%;
+  transition: color .3s, background-color .3s;
+}
+
+#submit-button:hover {
+  color: #232E21;
+  background-color: white;
+}
+
+.comments-section {
+  margin-top: 8%;
+}
+
+.comment {
+  color: #707070;
+  font-family: Poppins;
+}
+
+.comment h6 {
+  margin-top: -1%;
 }

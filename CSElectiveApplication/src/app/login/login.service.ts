@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import {NgForm} from "@angular/forms";
 import {HttpClient} from "@angular/common/http";
 import {Router} from "@angular/router";
+import {UserModel} from "./user.model";
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +12,7 @@ export class LoginService {
   loginStatus: string = 'LOG IN';
   headerStatus: string = 'NOT SIGNED IN';
   signInStatus: string = 'SIGN IN';
-  currentUser: any
+  currentUser: any;
 
   constructor(private http: HttpClient, private reroute: Router) { }
 
@@ -25,6 +26,8 @@ export class LoginService {
         this.loginStatus = 'LOGIN SUCCESS';
         this.headerStatus = 'SIGNED IN';
         this.signInStatus = 'SIGN OUT';
+
+        console.log(response.user);
 
         setTimeout(() => {
           this.reroute.navigate(['/'])

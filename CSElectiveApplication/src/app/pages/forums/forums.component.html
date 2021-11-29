@@ -17,7 +17,14 @@
           <div class="forum-content">
             <h2>{{ forum.title.toUpperCase() }}</h2>
             <h5>POSTED BY: {{ forum.poster }}</h5>
-            <p>{{ forum.content }}</p>
+
+            <p *ngIf="forum.content.length >= 100">
+              {{ forum.content.substring(0, 100) }}...
+            </p>
+
+            <p *ngIf="forum.content.length < 100">
+              {{ forum.content }}
+            </p>
 
             <button routerLink="/forums/{{ forum.id }}">JOIN DISCUSSION</button>
           </div>

@@ -13,6 +13,7 @@ export class ForumComponent implements OnInit {
 
   ngOnInit(): void {
     this.forumService.getForum(this.activatedRoute.snapshot.params['id']);
+    this.forumService.getComments(this.activatedRoute.snapshot.params['id']);
   }
 
 }
