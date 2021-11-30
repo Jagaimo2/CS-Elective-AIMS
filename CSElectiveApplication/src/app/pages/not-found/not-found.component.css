@@ -1,0 +1,22 @@
+.nonexistent-container {
+  text-align: center;
+  font-family: Poppins;
+  padding: 15%;
+}
+
+.nonexistent-container h1 {
+  font-size: 50px;
+  animation: change-font-color 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes change-font-color {
+  0% {
+    color: #232E21;
+  }
+
+  100% {
+    color: #F42272;
+  }
+}
+

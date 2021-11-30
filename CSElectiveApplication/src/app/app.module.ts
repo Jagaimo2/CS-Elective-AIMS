@@ -15,6 +15,7 @@ import { ForumsComponent } from './pages/forums/forums.component';
 import { JobsComponent } from './pages/jobs/jobs.component';
 import { HttpClientModule } from "@angular/common/http";
 import { ForumComponent } from './pages/forums/forum/forum.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent},
@@ -22,7 +23,9 @@ const appRoutes: Routes = [
   { path: 'login', component: LoginComponent},
   { path: 'forums', component: ForumsComponent},
   { path: 'forums/:id', component: ForumComponent},
-  { path: 'jobs', component: JobsComponent}
+  { path: 'jobs', component: JobsComponent},
+  { path: '404', component: NotFoundComponent},
+  { path: '**', redirectTo: '404'}
 ];
 
 @NgModule({
@@ -36,7 +39,8 @@ const appRoutes: Routes = [
     GalleryComponent,
     ForumsComponent,
     JobsComponent,
-    ForumComponent
+    ForumComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

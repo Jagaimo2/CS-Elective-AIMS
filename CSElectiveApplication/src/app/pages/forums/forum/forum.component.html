@@ -23,7 +23,7 @@
       <hr>
       <div *ngFor="let comment of forumService.comments" class="comment">
         <h5>{{ comment.poster }}</h5>
-        <h6>{{ comment.commentPostDate }}</h6>
+        <h6>{{ comment.commentPostDate.substring(11, 16) }} <span id="post-date">{{ comment.commentPostDate.substring(0, 9) }}</span></h6>
         <p>{{ comment.content }}</p>
       </div>
     </div>

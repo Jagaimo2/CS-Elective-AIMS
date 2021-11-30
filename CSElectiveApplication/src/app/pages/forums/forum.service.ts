@@ -65,7 +65,6 @@ export class ForumService {
     formData.append('forum_id', btoa(this.forum.id));
 
     this.http.post(`http://127.0.0.1:8000/forums/createComment`, formData).subscribe((response: any) => {
-
       this.getComments(this.forum.id)
     })
   }

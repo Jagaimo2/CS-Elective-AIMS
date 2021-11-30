@@ -5,6 +5,12 @@
     <li><a routerLink="/forums" class="generic-link">FORUMS</a></li>
     <li><a routerLink="/gallery" class="generic-link">GALLERY</a></li>
     <li><a routerLink="/" class="generic-link">HOME</a></li>
-    <li id="login-status"><a>{{ loginService.headerStatus }}</a></li>
+    <li class="login-status" *ngIf="loginService.currentUser != null">
+      <a>{{ loginService.currentUser.firstName }} {{ loginService.currentUser.lastName }}</a>
+    </li>
+
+    <li class="login-status" *ngIf="loginService.currentUser == null">
+      <a>NOT SIGNED IN</a>
+    </li>
   </ul>
 </div>
