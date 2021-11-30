@@ -27,7 +27,15 @@ export class LoginService {
         this.headerStatus = 'SIGNED IN';
         this.signInStatus = 'SIGN OUT';
 
-        console.log(response.user);
+        let id = atob(response.user.id);
+        let firstName = atob(response.user.first_name);
+        let lastName = atob(response.user.last_name);
+        let course = atob(response.user.course);
+        let yearblock = atob(response.user.yearLevelandBlock);
+        let studentCategory = atob(response.user.studentCategory);
+
+        let loggedUser = new UserModel(id, firstName, lastName, course, yearblock, studentCategory);
+        this.currentUser = loggedUser;
 
         setTimeout(() => {
           this.reroute.navigate(['/'])

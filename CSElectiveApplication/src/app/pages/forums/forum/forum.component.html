@@ -15,7 +15,7 @@
   <div class="forum-comments-container">
     <h2>COMMENTS</h2>
     <form (ngSubmit)="forumService.submitComment(commentForm)" #commentForm="ngForm">
-      <textarea name="content" id="comment" placeholder="Write and post your comment here..."></textarea>
+      <textarea name="content" id="comment" placeholder="Write and post your comment here..." ngModel required></textarea>
       <input type="submit" id="submit-button" value="COMMENT">
     </form>
 

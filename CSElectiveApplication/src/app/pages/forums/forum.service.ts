@@ -59,12 +59,14 @@ export class ForumService {
   }
 
   submitComment(form: NgForm){
-    let forumId = this.activatedRoute.snapshot.params['id'];
     let formData = new FormData();
-    formData.append('comment', form.value.content);
+    formData.append('user', btoa(this.loginService.currentUser.id));
+    formData.append('comment', btoa(form.value.content));
+    formData.append('forum_id', btoa(this.forum.id));
 
-    this.http.post(`http://127.0.0.1:8000/forums/${forumId}/createComment`, formData).subscribe((response: any) => {
+    this.http.post(`http://127.0.0.1:8000/forums/createComment`, formData).subscribe((response: any) => {
 
+      this.getComments(this.forum.id)
     })
   }
 }
