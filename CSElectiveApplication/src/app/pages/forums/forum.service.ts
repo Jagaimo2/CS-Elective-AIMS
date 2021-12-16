@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {ForumModel} from "./forum.model";
 import {CommentModel} from "./forum/comment.model";
-import {ActivatedRoute} from "@angular/router";
+import {ActivatedRoute, Router} from "@angular/router";
 import {NgForm} from "@angular/forms";
 import {LoginService} from "../../login/login.service";
 
@@ -16,12 +16,15 @@ export class ForumService {
 
   comments: CommentModel[] = [];
 
-  constructor(private http: HttpClient, private activatedRoute: ActivatedRoute, private loginService: LoginService) { }
+  constructor(private http: HttpClient,
+              private activatedRoute: ActivatedRoute,
+              private loginService: LoginService,
+              private route: Router) { }
 
   getForums(){
     this.forums = [];
 
-    this.http.get('http://127.0.0.1:8000/forums').subscribe((response: any) => {
+    this.http.get(`${this.loginService.path}/forums`).subscribe((response: any) => {
       for(let forum of response.forums){
         let id = atob(forum.id);
         let title = atob(forum.title);
@@ -35,16 +38,11 @@ export class ForumService {
     })
   }
 
-  getForum(id: string){
-    this.forum = this.forums.find(forum => forum.id == id);
-    console.log(this.forum.title);
-  }
-
   getComments(id: string){
     this.comments = [];
     console.log(id);
 
-    this.http.get(`http://127.0.0.1:8000/forums/${id}/comments`).subscribe((response: any) => {
+    this.http.get(`${this.loginService.path}/forums/${id}/comments`).subscribe((response: any) => {
       for(let comment of response.comments){
         let id = atob(comment.id);
         let content = atob(comment.content);
@@ -64,8 +62,32 @@ export class ForumService {
     formData.append('comment', btoa(form.value.content));
     formData.append('forum_id', btoa(this.forum.id));
 
-    this.http.post(`http://127.0.0.1:8000/forums/createComment`, formData).subscribe((response: any) => {
+    this.http.post(`${this.loginService.path}/forums/createComment`, formData).subscribe((response: any) => {
       this.getComments(this.forum.id)
     })
+  }
+
+  createForm(form: NgForm){
+    let formData = new FormData();
+
+    formData.append('title', form.value.title);
+    formData.append('content', form.value.content);
+    formData.append('category', form.value.category);
+
+    this.http.post(`${this.loginService.path}/forums/createForum/${this.loginService.currentUser.id}`, formData)
+      .subscribe((response: any) => {
+        this.route.navigate(['/forums'])
+    })
+  }
+
+  accessPage(id: string){
+    this.getComments(id);
+    for (let currentForum of this.forums){
+      if(currentForum.id == id){
+        this.forum = currentForum;
+      }
+    }
+
+    this.route.navigate([`/forums/${id}`]);
   }
 }

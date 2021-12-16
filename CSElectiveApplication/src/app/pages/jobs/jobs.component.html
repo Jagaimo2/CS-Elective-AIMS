@@ -1,6 +1,34 @@
 <div class="jobs-container">
   <app-content-header currentPage="JOBS"></app-content-header>
-  <div class="jobs-description"></div>
+  <div class="jobs-description">
+    <p>
+      Only Alumni may post jobs in this page. However, their fellow alumni
+      as well as undergraduates may take up their job offers. This feature
+      allows students of the college to help each other out and make way
+      for a myriad of opportunities.
+    </p>
+  </div>
+
+  <div class="all-jobs-container">
+    <div class="job" *ngFor="let job of job.jobs">
+      <div class="job-content-container">
+        <div class="job-content">
+          <h2>{{ job.title.toUpperCase() }}</h2>
+          <h5>POSTED BY: {{ job.poster }}</h5>
+
+          <p *ngIf="job.description.length >= 100">
+            {{ job.description.substring(0, 100) }}...
+          </p>
+
+          <p *ngIf="job.description.length < 100">
+            {{ job.description }}
+          </p>
+
+          <button>JOIN DISCUSSION</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- HEADER AND FOOTER -->

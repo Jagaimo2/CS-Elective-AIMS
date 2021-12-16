@@ -1,0 +1,127 @@
+@media (max-width: 768px) {
+
+}
+
+@media (min-width: 768px) {
+  .messaging {
+    display: flex;
+  }
+
+  .recipients-container {
+    width: 40%;
+    border-right: 1px solid #232E21;
+  }
+
+  .student-category {
+    height: 50px;
+  }
+
+  .students {
+    height: 600px;
+    overflow-y: scroll;
+  }
+
+  .student {
+    max-height: 90%;
+  }
+
+  .student p {
+    margin-top: -3%;
+  }
+
+  .live-chat-container {
+    width: 60%;
+    height: 600px;
+  }
+
+  .live-chat-container hr {
+    margin: 0 3%;
+    margin-bottom: 2%;
+  }
+
+  .chat-content {
+    height: 550px;
+    width: 100%;
+    overflow-y: scroll;
+  }
+
+  .form-container {
+    padding-left: 5%;
+    width: 100%;
+  }
+
+  #message-button {
+    margin-top: 1%;
+    margin-left: -5%;
+    height: 40px;
+    width: 10%;
+  }
+
+  #messageField {
+    float: left;
+    width: 80%;
+    height: 50px;
+    overflow-y: scroll;
+    resize: none;
+  }
+}
+
+.messages-container {
+  margin: 3% 5%;
+  color: #707070;
+  font-family: Bahnschrift;
+}
+
+.messaging {
+  margin-top: 5%;
+  border: 1px solid #232E21;
+  width: 100%;
+}
+
+.messages-description {
+  text-align: center;
+}
+
+.recipients-container {
+}
+
+.student-category {
+  background-color: #232E21;
+  font-weight: 700;
+  color: white;
+  width: 50%;
+  transition: color .3s, background-color .3s, border .3s;
+}
+
+.student-category:hover {
+  color: #232E21;
+  background-color: white;
+  border: 1px solid white;
+}
+
+.student {
+  background-color: #F42272;
+  color: white;
+  padding: 5%;
+}
+
+.undergraduates {
+  display: none;
+}
+
+.live-chat-container form{
+  text-align: center;
+}
+
+#message-button {
+  background-color: #232E21;
+  color: white;
+  font-family: Bahnschrift;
+  font-weight: 700;
+  transition: background-color .3s, color .3s;
+}
+
+#message-button:hover {
+  background-color: white;
+  color: #232E21;
+}

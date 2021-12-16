@@ -1,0 +1,52 @@
+<div class="messages-container">
+  <app-content-header currentPage="MESSAGING"></app-content-header>
+  <div class="messages-description">
+    <p>You can send personal messages to your peers in this page.</p>
+  </div>
+
+  <div class="messaging">
+    <div class="recipients-container">
+      <div>
+        <button class="student-category" type="button" (click)="showStudents('undergraduates')">ALUMNI</button>
+        <button class="student-category" type="button" (click)="showStudents('alumni')">UNDERGRADUATES</button>
+      </div>
+
+      <div class="students">
+        <div id="alumni" class="alumni">
+          <div class="student" *ngFor="let alumnus of messageService.alumni" (click)="messageService.getMessages(alumnus.id, alumnus.studentCategory)">
+            <h2>{{ alumnus.firstName}} {{ alumnus.lastName }}</h2>
+            <p>{{ alumnus.course}} Alumnus</p>
+          </div>
+        </div>
+
+        <div id="undergraduates" class="undergraduates">
+          <div class="student" *ngFor="let undergrad of messageService.undergrads" (click)="messageService.getMessages(undergrad.id, undergrad.studentCategory)">
+            <h2>{{ undergrad.firstName}} {{ undergrad.lastName }}</h2>
+            <p>Undergraduate, {{ undergrad.course}} {{ undergrad.yearblock }} Student</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="live-chat-container">
+      <div #chat id="chat" class="chat-content">
+        <div *ngFor="let message of messages">
+          <div class="message">
+            <h1>{{ message.content }}</h1>
+            <p>Sent: {{ message.date }}</p>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+      <div class="form-container">
+        <form (ngSubmit)="messageService.sendMessage(messageService.chatRecipient.id, messageForm)" #messageForm="ngForm">
+          <textarea name="content" id="messageField" placeholder="Enter your message here..." ngModel required></textarea>
+          <input id="message-button" type="submit" value="SEND">
+        </form>
+      </div>
+    </div>
+  </div>
+
+</div>
+<app-header></app-header>

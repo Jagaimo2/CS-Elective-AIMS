@@ -9,6 +9,8 @@ import {UserModel} from "./user.model";
 })
 export class LoginService {
 
+  path = 'http://192.168.100.99:8000';
+  isLoggedIn = false;
   loginStatus: string = 'LOG IN';
   headerStatus: string = 'NOT SIGNED IN';
   signInStatus: string = 'SIGN IN';
@@ -21,11 +23,12 @@ export class LoginService {
     formData.append('email', btoa(form.value.username));
     formData.append('password', btoa(form.value.password));
 
-    this.http.post('http://127.0.0.1:8000/login', formData).subscribe((response: any) => {
+    this.http.post(`${this.path}/login`, formData).subscribe((response: any) => {
       if(response.message == 'login success'){
         this.loginStatus = 'LOGIN SUCCESS';
         this.headerStatus = 'SIGNED IN';
         this.signInStatus = 'SIGN OUT';
+        this.isLoggedIn = true;
 
         let id = atob(response.user.id);
         let firstName = atob(response.user.first_name);
@@ -56,7 +59,16 @@ export class LoginService {
     this.headerStatus = 'NOT SIGNED IN';
     this.signInStatus = 'SIGN IN';
     this.currentUser = null;
+    this.isLoggedIn = true;
 
     this.reroute.navigate(['/login'])
+  }
+
+  getLogin(){
+    const promise = new Promise((resolve, reject) => {
+      resolve(this.isLoggedIn);
+    });
+
+    return promise;
   }
 }

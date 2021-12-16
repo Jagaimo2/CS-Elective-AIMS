@@ -3,7 +3,7 @@
     <li id="sign-in"><a (click)="loginInteract(loginService.headerStatus)">{{ loginService.signInStatus }}</a></li>
     <li><a routerLink="/jobs" class="generic-link">JOBS</a></li>
     <li><a routerLink="/forums" class="generic-link">FORUMS</a></li>
-    <li><a routerLink="/gallery" class="generic-link">GALLERY</a></li>
+    <li><a routerLink="/messages" class="generic-link">MESSAGES</a></li>
     <li><a routerLink="/" class="generic-link">HOME</a></li>
     <li class="login-status" *ngIf="loginService.currentUser != null">
       <a>{{ loginService.currentUser.firstName }} {{ loginService.currentUser.lastName }}</a>

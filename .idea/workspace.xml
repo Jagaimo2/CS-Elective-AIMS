@@ -2,13 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="337a1d89-c07b-47d1-a2a5-fa46da2f8fcb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/jobs/job.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/messaging/message.model.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSElectiveApplication/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CSElectiveApplication/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSElectiveApplication/src/app/footer/footer.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSElectiveApplication/src/app/footer/footer.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSElectiveApplication/src/app/footer/footer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CSElectiveApplication/src/app/footer/footer.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSElectiveApplication/src/app/header/header.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSElectiveApplication/src/app/header/header.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSElectiveApplication/src/app/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CSElectiveApplication/src/app/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSElectiveApplication/src/app/login/login.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CSElectiveApplication/src/app/login/login.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/forums/forum.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/forums/forum.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/forums/forum/forum.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/forums/forum/forum.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/forums/forum/forum.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/forums/forum/forum.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/forums/forum/forum.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/forums/forum/forum.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/forums/forums.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/forums/forums.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/forums/forums.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/forums/forums.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/gallery/gallery.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/gallery/gallery.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/gallery/gallery.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/gallery/gallery.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/home/home.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/jobs/jobs.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/jobs/jobs.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/jobs/jobs.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/jobs/jobs.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/jobs/jobs.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/jobs/jobs.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/not-found/not-found.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/not-found/not-found.component.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,17 +40,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/app.module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="33" column="20" lean-forward="true" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+            <state relative-caret-position="396">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/pages/forums/forum.service.ts">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/pages/jobs/job.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="66" column="105" selection-start-line="66" selection-start-column="105" selection-end-line="66" selection-end-column="105" />
+            <state relative-caret-position="144">
+              <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
@@ -43,46 +62,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/header/header.component.html">
+        <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/pages/jobs/jobs.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+            <state relative-caret-position="288">
+              <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/header/header.component.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="93" column="21" selection-start-line="93" selection-start-column="21" selection-end-line="93" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/pages/not-found/not-found.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="35" lean-forward="true" selection-start-column="35" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/pages/not-found/not-found.component.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/pages/not-found/not-found.component.ts">
+        <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/pages/jobs/jobs.component.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="342">
-              <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+              <caret line="45" column="12" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/pages/forums/forums.component.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="94" selection-start-line="94" selection-end-line="97" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/pages/jobs/jobs.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
@@ -96,6 +106,7 @@
     <findStrings>
       <find>Alumni Information Management System</find>
       <find>login</find>
+      <find>messageField</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -105,7 +116,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/gallery/gallery.component.html" />
-        <option value="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/home/home.component.html" />
         <option value="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/home/home.component.css" />
         <option value="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/login/login.component.spec.ts" />
         <option value="$PROJECT_DIR$/CSElectiveApplication/src/app/login/login.component.ts" />
@@ -116,35 +126,53 @@
         <option value="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/forums/forums.component.ts" />
         <option value="$PROJECT_DIR$/CSElectiveApplication/src/app/login/login.component.css" />
         <option value="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/gallery/gallery.component.css" />
-        <option value="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/forums/forums.component.css" />
-        <option value="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/forums/forums.component.html" />
         <option value="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/forums/forum/comment.model.ts" />
-        <option value="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/forums/forum/forum.component.ts" />
         <option value="$PROJECT_DIR$/CSElectiveApplication/src/app/login/user.model.ts" />
-        <option value="$PROJECT_DIR$/CSElectiveApplication/src/app/login/login.service.ts" />
-        <option value="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/forums/forum.service.ts" />
-        <option value="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/forums/forum/forum.component.html" />
         <option value="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/forums/forum/forum.component.css" />
-        <option value="$PROJECT_DIR$/CSElectiveApplication/src/app/header/header.component.html" />
-        <option value="$PROJECT_DIR$/CSElectiveApplication/src/app/header/header.component.css" />
-        <option value="$PROJECT_DIR$/CSElectiveApplication/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/not-found/not-found.component.ts" />
         <option value="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/not-found/not-found.component.html" />
         <option value="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/not-found/not-found.component.css" />
+        <option value="$PROJECT_DIR$/CSElectiveApplication/src/app/header/header.component.html" />
+        <option value="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/forums/create-forum/create-forum.component.css" />
+        <option value="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/forums/create-forum/create-forum.component.ts" />
+        <option value="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/forums/forums.component.css" />
+        <option value="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/forums/forums.component.html" />
+        <option value="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/forums/create-forum/create-forum.component.html" />
+        <option value="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/messaging/message.model.ts" />
+        <option value="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/messaging/messaging.component.html" />
+        <option value="$PROJECT_DIR$/CSElectiveApplication/src/app/login/login.service.spec.ts" />
+        <option value="$PROJECT_DIR$/CSElectiveApplication/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/CSElectiveApplication/src/app/auth-guard.service.ts" />
+        <option value="$PROJECT_DIR$/CSElectiveApplication/src/app/login/login.service.ts" />
+        <option value="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/messaging/messaging.component.ts" />
+        <option value="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/messaging/message.service.ts" />
+        <option value="$PROJECT_DIR$/CSElectiveApplication/src/app/footer/footer.component.css" />
+        <option value="$PROJECT_DIR$/CSElectiveApplication/src/app/header/header.component.css" />
+        <option value="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/home/home.component.html" />
+        <option value="$PROJECT_DIR$/CSElectiveApplication/src/app/footer/footer.component.html" />
+        <option value="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/forums/forum/forum.component.ts" />
+        <option value="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/forums/forum.service.ts" />
+        <option value="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/forums/forum/forum.component.html" />
+        <option value="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/messaging/messaging.component.css" />
+        <option value="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/jobs/job.model.ts" />
+        <option value="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/jobs/jobs.component.ts" />
+        <option value="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/jobs/jobs.component.html" />
+        <option value="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/jobs/jobs.component.css" />
+        <option value="$PROJECT_DIR$/CSElectiveApplication/src/app/pages/jobs/job.service.ts" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
+    <option name="y" value="-10" />
     <option name="width" value="980" />
-    <option name="height" value="1050" />
+    <option name="height" value="1060" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -185,12 +213,22 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="not-found" type="462c0819:PsiDirectoryNode" />
+              <item name="forums" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CS-Elective-AIMS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CS-Elective-AIMS" type="462c0819:PsiDirectoryNode" />
+              <item name="CSElectiveApplication" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="jobs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -243,12 +281,27 @@
       <workItem from="1638110538185" duration="1316000" />
       <workItem from="1638166247537" duration="6962000" />
       <workItem from="1638267671505" duration="5133000" />
-      <workItem from="1638287049496" duration="2128000" />
+      <workItem from="1638287049496" duration="2389000" />
+      <workItem from="1638359949221" duration="432000" />
+      <workItem from="1638762423102" duration="1269000" />
+      <workItem from="1638957095903" duration="2716000" />
+      <workItem from="1638963141529" duration="3331000" />
+      <workItem from="1639029057385" duration="3955000" />
+      <workItem from="1639038426838" duration="1694000" />
+      <workItem from="1639322620530" duration="1816000" />
+      <workItem from="1639345044386" duration="15145000" />
+      <workItem from="1639482756475" duration="14979000" />
+      <workItem from="1639519736110" duration="5735000" />
+      <workItem from="1639537604821" duration="11000" />
+      <workItem from="1639573379539" duration="4182000" />
+      <workItem from="1639584621379" duration="406000" />
+      <workItem from="1639624742346" duration="5327000" />
+      <workItem from="1639636599247" duration="2322000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48696000" />
+    <option name="totallyTimeSpent" value="112277000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
@@ -277,34 +330,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/pages/jobs/jobs.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/pages/home/home.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="738">
-          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/footer/footer.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/pages/home/home.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/header/header.service.ts" />
     <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/pages/login/login.component.spec.ts" />
     <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/login/login.component.ts">
@@ -355,31 +380,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/pages/gallery/gallery.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="41" column="23" lean-forward="true" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/pages/gallery/gallery.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/pages/gallery/gallery.component.css" />
+    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/pages/gallery/gallery.component.html" />
     <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/login/login.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="10" column="65" selection-start-line="10" selection-start-column="65" selection-end-line="10" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/pages/forums/forums.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1674">
-          <caret line="93" column="28" selection-start-line="93" selection-start-column="28" selection-end-line="93" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -390,23 +396,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/pages/forums/forums.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/pages/forums/forum/forum.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/pages/forums/forum.model.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -414,71 +403,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/pages/forums/forum/forum.component.html">
+    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/pages/not-found/not-found.component.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="79" selection-start-line="25" selection-start-column="79" selection-end-line="25" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/pages/forums/forum/forum.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1620">
-          <caret line="90" column="12" selection-start-line="90" selection-start-column="12" selection-end-line="90" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/login/login.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/pages/forums/forum.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="66" column="105" selection-start-line="66" selection-start-column="105" selection-end-line="66" selection-end-column="105" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/header/header.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/header/header.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="93" column="21" selection-start-line="93" selection-start-column="21" selection-end-line="93" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/login/user.model.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="36" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="33" column="20" lean-forward="true" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+        <state relative-caret-position="360">
+          <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/pages/not-found/not-found.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
+        <state relative-caret-position="432">
           <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
@@ -486,17 +420,259 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/content-header/content-header.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/pages/not-found/not-found.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="35" lean-forward="true" selection-start-column="35" selection-end-column="35" />
+        <state relative-caret-position="72">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/pages/not-found/not-found.component.css">
+    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/pages/home/home.component.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="-450">
+          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/pages/forums/create-forum/create-forum.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/pages/forums/create-forum/create-forum.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/pages/forums/create-forum/create-forum.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="49" lean-forward="true" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/pages/messaging/message.model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/login/login.service.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/pages/forums/forum/forum.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="90" column="12" selection-start-line="90" selection-start-column="12" selection-end-line="90" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/pages/messaging/messaging.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/login/user.model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/auth-guard.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/login/login.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="68" column="31" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/pages/messaging/messaging.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/pages/messaging/message.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="84" selection-start-line="84" selection-end-line="84" />
+          <folding>
+            <element signature="e#0#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/header/header.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/header/header.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/footer/footer.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/pages/home/home.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/footer/footer.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/pages/forums/forum/forum.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/pages/forums/forum/forum.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="39" lean-forward="true" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/pages/forums/forum.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="80" column="3" lean-forward="true" selection-start-line="80" selection-start-column="3" selection-end-line="80" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/pages/messaging/messaging.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="35" column="37" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/pages/messaging/messaging.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="98" column="26" selection-start-line="98" selection-start-column="26" selection-end-line="98" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/pages/jobs/jobs.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/pages/jobs/job.model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/pages/jobs/jobs.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/pages/forums/forums.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="32" column="14" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="32" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/pages/forums/forums.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="94" selection-start-line="94" selection-end-line="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/pages/jobs/jobs.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="45" column="12" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSElectiveApplication/src/app/pages/jobs/job.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

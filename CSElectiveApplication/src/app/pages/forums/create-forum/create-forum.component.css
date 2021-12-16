@@ -1,0 +1,39 @@
+@media (max-width: 768px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+.forum-creation-container {
+  margin: 3% 5%;
+  font-family: Poppins;
+  color: #707070;
+}
+
+.forum-creation-form label{
+  display: block;
+  margin: 3%;
+}
+
+.forum-creation-form input{
+}
+
+textarea {
+  margin-left: 3%;
+  height: 300px;
+  width: 80%;
+  resize: none;
+}
+
+#submit-button {
+  margin-top: 3%;
+  margin-left: 3%;
+  width: 30%;
+  height: 50px;
+
+  font-weight: 700;
+  color: white;
+  background-color: #232E21;
+}

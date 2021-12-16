@@ -1,0 +1,31 @@
+<div class="forum-creation-container">
+  <app-content-header currentPage="CREATE A FORUM"></app-content-header>
+  <div class="page-description">
+    <p>You may start discussions by filling out the form below.</p>
+  </div>
+
+  <div class="forum-creation-form">
+    <form (ngSubmit)="forum.createForm(formCreationForum)" #formCreationForum="ngForm">
+      <label>
+        FORUM TITLE:
+        <input name="title" type="text" required ngModel>
+      </label>
+
+      <label>CONTENT:</label>
+      <textarea name="content" placeholder="Enter content here... (max: 40000)" maxlength="40000" required ngModel></textarea>
+
+      <label>
+        FORUM CATEGORY:
+        <select name="category" required ngModel>
+          <option value="discussion" selected>Discussion</option>
+          <option value="question">Question</option>
+          <option value="informative">Informative</option>
+          <option value="questionAndAnswer">Q&A Discussion</option>
+        </select>
+      </label>
+      <input type="submit" value="CREATE FORUM" id="submit-button">
+    </form>
+  </div>
+</div>
+<app-header></app-header>
+<app-footer></app-footer>

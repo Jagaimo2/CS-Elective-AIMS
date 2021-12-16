@@ -8,11 +8,14 @@
 @media (min-width: 768px) {
   .forums {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .forum {
+    flex: 1 0 40%;
     margin: 3% 3%;
     width: 45%;
+    max-width: 43%;
   }
 }
 
@@ -29,6 +32,27 @@
 .forums-description p {
   font-family: Poppins;
   color: #707070;
+}
+
+.forums-description {
+  text-align: center;
+}
+
+#create-forum {
+  background-color: #232E21;
+  border: 1px solid #232E21;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  width: 35%;
+  height: 50px;
+  margin: 2% 0;
+  transition: background-color .3s, border .3s;
+}
+
+#create-forum:hover {
+  background-color: #F42272;
+  border: 1px solid #F42272;
 }
 
 .forum {
@@ -50,10 +74,6 @@
 }
 
 .forum-image-container {
-  background: url("src\assets\images\MITOCHONDRIA.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-
   width: 100.2%;
 }
 
