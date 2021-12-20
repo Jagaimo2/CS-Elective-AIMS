@@ -13,14 +13,16 @@
 
       <div class="students">
         <div id="alumni" class="alumni">
-          <div class="student" *ngFor="let alumnus of messageService.alumni" (click)="messageService.getMessages(alumnus.id, alumnus.studentCategory)">
+          <div class="student" *ngFor="let alumnus of messageService.alumni"
+               (click)="messageService.getMessages(alumnus.id, alumnus.studentCategory); messageService.start()">
             <h2>{{ alumnus.firstName}} {{ alumnus.lastName }}</h2>
             <p>{{ alumnus.course}} Alumnus</p>
           </div>
         </div>
 
         <div id="undergraduates" class="undergraduates">
-          <div class="student" *ngFor="let undergrad of messageService.undergrads" (click)="messageService.getMessages(undergrad.id, undergrad.studentCategory)">
+          <div class="student" *ngFor="let undergrad of messageService.undergrads"
+               (click)="messageService.getMessages(undergrad.id, undergrad.studentCategory); messageService.start()">
             <h2>{{ undergrad.firstName}} {{ undergrad.lastName }}</h2>
             <p>Undergraduate, {{ undergrad.course}} {{ undergrad.yearblock }} Student</p>
           </div>
@@ -29,11 +31,30 @@
     </div>
 
     <div class="live-chat-container">
+      <div id="chat-recipient">
+        <h3 *ngIf="messageService.chatRecipient != null">
+          {{ messageService.chatRecipient.firstName.toUpperCase() }} {{ messageService.chatRecipient.lastName.toUpperCase() }}
+        </h3>
+      </div>
+
       <div #chat id="chat" class="chat-content">
         <div *ngFor="let message of messages">
-          <div class="message">
-            <h1>{{ message.content }}</h1>
-            <p>Sent: {{ message.date }}</p>
+          <div *ngIf="currentLength > 0">
+            <div class="message-container">
+              <div *ngIf="message.sender == (login.currentUser.firstName + ' ' + login.currentUser.lastName)">
+                <div class="message" id="own-message">
+                  <h4>{{ message.content }}</h4>
+                  <p>Sent: {{ message.date.substring(0, 10) }} {{ message.date.substring(11, 16)}}</p>
+                </div>
+              </div>
+
+              <div *ngIf="message.sender != (login.currentUser.firstName + ' ' + login.currentUser.lastName)">
+                <div class="message" id="other-message">
+                  <h4>{{ message.content }}</h4>
+                  <p>Sent: {{ message.date.substring(0, 10) }} {{ message.date.substring(11, 16)}}</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -50,3 +71,4 @@
 
 </div>
 <app-header></app-header>
+<app-footer></app-footer>

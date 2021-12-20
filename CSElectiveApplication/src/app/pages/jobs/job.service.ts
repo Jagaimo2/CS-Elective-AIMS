@@ -18,7 +18,8 @@ export class JobService {
     this.jobs = [];
     this.http.get(`${this.login.path}/jobs`).subscribe((response: any) => {
       for(let job of response.jobs){
-        let newJob = new JobModel(job.title,
+        let newJob = new JobModel(job.id,
+          job.title,
           job.description,
           job.date,
           job.poster,
@@ -27,5 +28,10 @@ export class JobService {
         this.jobs.push(newJob);
       }
     })
+  }
+
+  viewOffer(id: string){
+    this.job = this.jobs.find(job => job.id == id);
+    this.route.navigate([`/jobs/${id}`])
   }
 }

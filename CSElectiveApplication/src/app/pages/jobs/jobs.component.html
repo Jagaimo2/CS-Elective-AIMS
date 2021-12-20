@@ -10,7 +10,7 @@
   </div>
 
   <div class="all-jobs-container">
-    <div class="job" *ngFor="let job of job.jobs">
+    <div class="job" *ngFor="let job of jobService.jobs">
       <div class="job-content-container">
         <div class="job-content">
           <h2>{{ job.title.toUpperCase() }}</h2>
@@ -24,7 +24,7 @@
             {{ job.description }}
           </p>
 
-          <button>JOIN DISCUSSION</button>
+          <button class="view-job" (click)="jobService.viewOffer(job.id)">VIEW JOB OFFER</button>
         </div>
       </div>
     </div>

@@ -17,7 +17,7 @@
     left: 5%;
 
     width: 90%;
-    height: 85%;
+    height: 90%;
   }
 }
 
@@ -42,7 +42,7 @@
     left: 35%;
 
     width: 30%;
-    height: 85%;
+    height: 90%;
   }
 }
 
@@ -74,6 +74,7 @@
 .fields {
   text-align: center;
   padding: 10%;
+  padding-bottom: 15%;
 
   font-family: Poppins;
   font-size: 13px;

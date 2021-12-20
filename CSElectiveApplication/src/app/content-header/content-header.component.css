@@ -22,6 +22,10 @@
 }
 
 @media (max-width: 768px) {
+  .content-header-message-container h1 {
+    font-size: 20px;
+  }
+
   .content-header {
     margin-top: 20%;
   }
@@ -30,9 +34,9 @@
     content: '';
     display: inline-block;
     width: 25%;
-    height: 10px;
+    height: 7px;
     background: #F42272;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
   }
 
   .content-header-message-container h1:before {

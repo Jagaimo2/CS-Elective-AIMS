@@ -1,5 +1,7 @@
 @media (max-width: 768px) {
-
+  .job {
+    margin: 10% 0;
+  }
 }
 
 @media (min-width: 768px) {
@@ -45,5 +47,23 @@
 
 .job-content {
   padding: 5%;
+}
+
+.view-job {
+  font-family: Poppins;
+  font-weight: bolder;
+  background-color: #232E21;
+  border: 1px solid #232E21;
+  color: white;
+
+  width: 40%;
+  padding: 2%;
+  transition: color .3s, background-color .3s, border .3s;
+}
+
+.view-job:hover {
+  border: 1px solid #F42272;
+  color: white;
+  background-color: #F42272;
 }
 

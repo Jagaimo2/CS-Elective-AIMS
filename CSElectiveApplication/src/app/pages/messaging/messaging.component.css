@@ -1,5 +1,53 @@
 @media (max-width: 768px) {
+  .students {
+    height: 400px;
+    overflow-y: scroll;
+  }
 
+  .student h2{
+    font-size: 17px;
+  }
+
+  .student-category {
+    height: 40px;
+  }
+
+  .chat-content {
+    height: 500px;
+    width: 100%;
+    overflow-y: scroll;
+  }
+
+  .form-container {
+    padding-left: 5%;
+    width: 100%;
+  }
+
+  .message {
+    margin: 10% 0;
+    padding: 2%;
+    width: 80%;
+    border-radius: 10px;
+  }
+
+  #message-button {
+    margin-top: 5%;
+    height: 35px;
+    width: 85%;
+  }
+
+  #messageField {
+    margin-top: -3%;
+    margin-left: -5.2%;
+    width: 98.3%;
+    height: 35px;
+    overflow-y: scroll;
+    resize: none;
+  }
+
+  #own-message {
+    margin-left: 15%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -39,8 +87,20 @@
     margin-bottom: 2%;
   }
 
+  #chat-recipient {
+    padding-top: .5%;
+    width: 100.3%;
+    height: 50px;
+    background-color: #F42272;
+    text-align: center;
+  }
+
+  #chat-recipient h3{
+    color: white;
+  }
+
   .chat-content {
-    height: 550px;
+    height: 500px;
     width: 100%;
     overflow-y: scroll;
   }
@@ -48,6 +108,17 @@
   .form-container {
     padding-left: 5%;
     width: 100%;
+  }
+
+  .live-chat-container form{
+    text-align: center;
+  }
+
+  .message {
+    margin: 3%;
+    padding: 2%;
+    width: 40%;
+    border-radius: 10px;
   }
 
   #message-button {
@@ -63,6 +134,10 @@
     height: 50px;
     overflow-y: scroll;
     resize: none;
+  }
+
+  #own-message {
+    margin-left: 55%;
   }
 }
 
@@ -80,9 +155,6 @@
 
 .messages-description {
   text-align: center;
-}
-
-.recipients-container {
 }
 
 .student-category {
@@ -109,10 +181,6 @@
   display: none;
 }
 
-.live-chat-container form{
-  text-align: center;
-}
-
 #message-button {
   background-color: #232E21;
   color: white;
@@ -125,3 +193,26 @@
   background-color: white;
   color: #232E21;
 }
+
+.message-container {
+  width: 100%;
+  display: inline;
+  margin-bottom: 5%;
+}
+
+.message p{
+  font-size: 15px;
+}
+
+#own-message {
+  background-color: #232E21;
+  color: white;
+}
+
+#other-message {
+  background-color: #F42272;
+  color: white;
+}
+
+
+

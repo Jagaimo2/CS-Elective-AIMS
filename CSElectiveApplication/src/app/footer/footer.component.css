@@ -1,12 +1,12 @@
 @media (max-width: 768px) {
   .content-footer {
-    width: 103.5%;
-    height: 100%;
+    width: 105.5%;
+    display: block;
+    padding-bottom: 3%;
   }
 
   .contents {
-    display: block;
-    margin-bottom: 3%;
+    height: 100%;
   }
 
   .content-1, .content-2, .content-3 {
@@ -17,11 +17,10 @@
 
   .content-2, .content-3 {
     border-left: 2px solid #F42272;
-    padding-left: 2%;
+    padding-left: 5%;
   }
 
   .content-1 {
-    max-width: 30%;
     padding-top: 1%;
   }
 
@@ -51,6 +50,7 @@
 
 @media (min-width: 768px) {
   .content-footer {
+    height: 200px;
     width: 101.2%;
     padding-bottom: 10%;
   }
@@ -107,7 +107,6 @@
   color: white;
   background-color: #232E21;
 
-  height: 200px;
   position: relative;
   margin-top: 15%;
 

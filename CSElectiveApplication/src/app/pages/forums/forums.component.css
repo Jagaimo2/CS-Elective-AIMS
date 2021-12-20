@@ -38,6 +38,10 @@
   text-align: center;
 }
 
+.description {
+  text-align: left;
+}
+
 #create-forum {
   background-color: #232E21;
   border: 1px solid #232E21;

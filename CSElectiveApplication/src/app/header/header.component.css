@@ -1,7 +1,7 @@
 @media (max-width: 768px)  {
   a {
     font-size: 9px;
-    padding: 3px 10px;
+    padding: 10px 17px;
   }
 
   .generic-link:hover {
@@ -30,6 +30,7 @@
 
   a {
     font-size: 14px;
+    padding: 20px 30px;
   }
 }
 
@@ -58,7 +59,6 @@ a {
   display: block;
   color: white;
   text-align: center;
-  padding: 20px 30px;
   text-decoration: none;
 }
 

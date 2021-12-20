@@ -1,0 +1,15 @@
+<div class="job-offer-container">
+  <app-content-header currentPage="JOB OFFER"></app-content-header>
+
+  <div class="job-details">
+    <h1>{{ jobService.job.title }}</h1>
+    <h5>Date Posted: {{ jobService.job.date.substring(0, 10)}}</h5>
+    <h5>Posted by: {{ jobService.job.poster }}</h5>
+
+    <div class="description">
+      <p>{{ jobService.job.description }}</p>
+    </div>
+  </div>
+</div>
+<app-header></app-header>
+<app-footer></app-footer>

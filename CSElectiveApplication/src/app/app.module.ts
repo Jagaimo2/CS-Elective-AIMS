@@ -18,6 +18,7 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { MessagingComponent } from './pages/messaging/messaging.component';
 import { CreateForumComponent } from './pages/forums/create-forum/create-forum.component';
 import { AuthGuardService } from "./auth-guard.service";
+import { JobComponent } from './pages/jobs/job/job.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent},
@@ -27,6 +28,7 @@ const appRoutes: Routes = [
   { path: 'forums/createForum', component: CreateForumComponent, canActivate: [AuthGuardService]},
   { path: 'forums/:id', component: ForumComponent, canActivate: [AuthGuardService]},
   { path: 'jobs', component: JobsComponent, canActivate: [AuthGuardService]},
+  { path: 'jobs/:id', component: JobComponent, canActivate: [AuthGuardService]},
   { path: '404', component: NotFoundComponent},
   { path: '**', redirectTo: '404'}
 ];
@@ -44,7 +46,8 @@ const appRoutes: Routes = [
     ForumComponent,
     NotFoundComponent,
     MessagingComponent,
-    CreateForumComponent
+    CreateForumComponent,
+    JobComponent
   ],
   imports: [
     BrowserModule,

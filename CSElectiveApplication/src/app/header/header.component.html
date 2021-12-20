@@ -1,10 +1,10 @@
 <div class="header">
   <ul>
-    <li id="sign-in"><a (click)="loginInteract(loginService.headerStatus)">{{ loginService.signInStatus }}</a></li>
-    <li><a routerLink="/jobs" class="generic-link">JOBS</a></li>
-    <li><a routerLink="/forums" class="generic-link">FORUMS</a></li>
-    <li><a routerLink="/messages" class="generic-link">MESSAGES</a></li>
-    <li><a routerLink="/" class="generic-link">HOME</a></li>
+    <li id="sign-in"><a (click)="loginInteract(loginService.headerStatus); message.stop()">{{ loginService.signInStatus }}</a></li>
+    <li><a routerLink="/jobs" class="generic-link" (click)="message.stop()">JOBS</a></li>
+    <li><a routerLink="/forums" class="generic-link" (click)="message.stop()">FORUMS</a></li>
+    <li><a routerLink="/messages" class="generic-link" (click)="message.stop()">MESSAGES</a></li>
+    <li><a routerLink="/" class="generic-link" (click)="message.stop()">HOME</a></li>
     <li class="login-status" *ngIf="loginService.currentUser != null">
       <a>{{ loginService.currentUser.firstName }} {{ loginService.currentUser.lastName }}</a>
     </li>

@@ -10,7 +10,8 @@ import {MessageModel} from "./message.model";
 })
 export class MessageService {
 
-  currentLength = 0;
+  stopRetrieval: boolean = false;
+  currentId = '';
   alumni: UserModel[] = [];
   undergrads: UserModel[] = [];
   chatRecipient: any;
@@ -44,7 +45,6 @@ export class MessageService {
           undergrad.studentCategory);
 
         this.undergrads.push(newUndergrad);
-        console.log(newUndergrad);
       }
 
       if(this.loginService.currentUser.studentCategory == 'Alumnus'){
@@ -61,39 +61,42 @@ export class MessageService {
   }
 
   getMessages(id: string, category: string){
-    if(category == 'Alumnus'){
-      this.chatRecipient = this.alumni.find(alumnus => alumnus.id == id);
+    if(!this.stopRetrieval){
+      this.currentId = id;
+
+      if(category == 'Alumnus'){
+        this.chatRecipient = this.alumni.find(alumnus => alumnus.id == id);
+      }
+      else if (category == 'Undergraduate'){
+        this.chatRecipient = this.undergrads.find(undergrad => undergrad.id == id);
+      }
+
+
+      this.http.get(`${this.loginService.path}/messages/${this.loginService.currentUser.id}/${this.chatRecipient.id}`)
+        .subscribe((response: any) => {
+
+          let retrieved_messages: MessageModel[] = [];
+          for(let message of response.messages){
+            let newMessage = new MessageModel(message.id,
+              message.content,
+              message.date_sent,
+              message.sender,
+              message.recipient);
+
+            retrieved_messages.push(newMessage);
+          }
+
+          this.listen(retrieved_messages);
+        });
+
+      setTimeout(() => {
+        this.getMessages(this.currentId, category)
+      }, 2000)
     }
-    else if (category == 'Undergraduate'){
-      this.chatRecipient = this.undergrads.find(undergrad => undergrad.id == id);
-    }
-
-
-    this.http.get(`${this.loginService.path}/messages/${this.loginService.currentUser.id}/${this.chatRecipient.id}`)
-      .subscribe((response: any) => {
-
-        let retrieved_messages: MessageModel[] = [];
-        for(let message of response.messages){
-          let newMessage = new MessageModel(message.id,
-                                            message.content,
-                                            message.date_sent,
-                                            message.sender,
-                                            message.recipient);
-
-          retrieved_messages.push(newMessage);
-        }
-
-        this.listen(retrieved_messages);
-      });
-
-    setTimeout(() => {
-      this.getMessages(id, category)
-    }, 2000)
   }
 
   listen(messages: MessageModel[]){
     this.messages.emit(messages);
-    console.log(messages);
   }
 
   sendMessage(recipient: string, form: NgForm){
@@ -115,10 +118,16 @@ export class MessageService {
 
           let chatContainer: any;
           chatContainer = document.getElementById('chat');
-          console.log(chatContainer.scrollTop);
-          console.log(chatContainer.scrollHeight);
           chatContainer.scrollTop = 500;
         })
     }
+  }
+
+  stop(){
+    this.stopRetrieval = true;
+  }
+
+  start(){
+    this.stopRetrieval = false;
   }
 }

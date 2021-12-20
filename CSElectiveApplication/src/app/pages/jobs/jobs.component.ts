@@ -8,10 +8,9 @@ import {JobService} from "./job.service";
 })
 export class JobsComponent implements OnInit {
 
-  constructor(public job: JobService) { }
+  constructor(public jobService: JobService) { }
 
   ngOnInit(): void {
-    this.job.getJobs();
+    this.jobService.getJobs();
   }
-
 }

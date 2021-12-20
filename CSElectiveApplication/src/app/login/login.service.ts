@@ -59,7 +59,7 @@ export class LoginService {
     this.headerStatus = 'NOT SIGNED IN';
     this.signInStatus = 'SIGN IN';
     this.currentUser = null;
-    this.isLoggedIn = true;
+    this.isLoggedIn = false;
 
     this.reroute.navigate(['/login'])
   }

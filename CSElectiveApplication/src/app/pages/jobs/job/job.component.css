@@ -1,0 +1,29 @@
+@media (max-width: 768px) {
+  .job-details {
+    width: 95%;
+    padding: 3%;
+    padding-bottom: 15%;
+  }
+}
+
+@media (min-width: 768px) {
+  .job-details {
+    width: 50%;
+    max-width: 50%;
+
+    margin-left: 23%;
+    padding: 3%;
+    padding-bottom: 15%;
+  }
+}
+
+.job-offer-container {
+  font-family: Poppins;
+  color: #707070;
+  margin: 3% 5%;
+}
+
+.job-details {
+  text-align: left;
+  border: 2px solid #F42272;
+}

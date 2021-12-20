@@ -1,6 +1,7 @@
 import {AfterViewChecked, Component, Input, OnInit, ViewChild} from '@angular/core';
 import {MessageService} from "./message.service";
 import {MessageModel} from "./message.model";
+import {LoginService} from "../../login/login.service";
 
 @Component({
   selector: 'app-messaging',
@@ -9,10 +10,11 @@ import {MessageModel} from "./message.model";
 })
 export class MessagingComponent implements OnInit, AfterViewChecked{
 
+  currentLength = 0;
   @ViewChild('chat') private myScrollContainer: any;
   @Input() messages: MessageModel[] = [];
 
-  constructor(public messageService: MessageService) { }
+  constructor(public messageService: MessageService, public login: LoginService) { }
 
   ngOnInit(): void {
     this.messageService.getStudents();
@@ -22,7 +24,10 @@ export class MessagingComponent implements OnInit, AfterViewChecked{
   }
 
   ngAfterViewChecked() {
-    this.scrollToBottom()
+    if(this.currentLength < this.messages.length){
+      this.currentLength = this.messages.length;
+      this.scrollToBottom()
+    }
   }
 
   showStudents(category: string){

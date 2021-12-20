@@ -80,6 +80,8 @@
 }
 
 .comment {
+  width: 60;
+  margin: 5% 0;
   color: #707070;
   font-family: Poppins;
 }
